@@ -23,7 +23,13 @@ export default defineConfig({
         text: 'Introduction',
         items: [
           { text: 'What is orchestration?', link: '/guide/what-is-orchestration' },
-          { text: 'Features', link: '/guide/features' }
+          { text: 'Features', link: '/guide/features' },
+        ]
+      },
+      {
+        text: 'Getting Started',
+        items: [
+            { text: 'Installation', link: '/guide/installation' },
         ]
       }
     ],
