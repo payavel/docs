@@ -2,7 +2,7 @@
 Orchestration's flexibility comes from its extensive configuration options. Here, we'll guide you through the essential settings to get you up and running.
 
 ## Global Configuration
-Upon initializing orchestration using the [setup wizard]('/guide/installation#initialize-with-the-setup-wizard), a "config/orchestration.php" file is created. This serves as your global configuration, applying default settings across all services unless overridden by service-specific configurations.
+Upon initializing orchestration using the [setup wizard]('/guide/installation#initialize-with-the-setup-wizard), a 'config/orchestration.php' file is created. This serves as your global configuration, applying default settings across all services unless overridden by service-specific configurations.
 
 ### Initial Setup
 Your orchestration config file should initially look like this:
@@ -49,7 +49,7 @@ When registering custom drivers, make sure to also include any standard drivers 
 :::
 
 #### Enabling Test Mode
-Toggle test mode via the configuration file or ".env" for broader testing flexibility.
+Toggle test mode via the configuration file or '.env' for broader testing flexibility.
 ```php
 return [
 
@@ -75,7 +75,7 @@ Overriding models only applies when using the database driver.
 :::
 
 ## Service-Specific Configuration
-Configurations within a service's dedicated file (e.g., "checkout.php") take precedence over global settings ("orchestration.php").
+Configurations within a service's dedicated file (e.g., 'checkout.php') take precedence over global settings ('orchestration.php').
 ```php
 // config/orchestration.php
 return [
@@ -98,7 +98,7 @@ return [
 ];
 ```
 
-You can set up configurations for each service in the "orchestration.php" file. This is useful for the database driver, which doesn't rely on settings in the service-specific config files.
+You can set up configurations for each service in the 'orchestration.php' file. This is useful for the database driver, which doesn't rely on settings in the service-specific config files.
 ```php
 return [
 
