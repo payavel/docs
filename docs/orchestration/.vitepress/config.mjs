@@ -31,6 +31,7 @@ export default defineConfig({
         items: [
             { text: 'Installation', link: '/guide/installation' },
             { text: 'Configuration', link: '/guide/configuration' },
+            { text: 'File Structure', link: '/guide/file-structure' },
         ]
       }
     ],
