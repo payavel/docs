@@ -2,7 +2,7 @@
 Orchestration's flexibility comes from its extensive configuration options. Here, we'll guide you through the essential settings to get you up and running.
 
 ## Global Configuration
-Upon initializing orchestration using the [setup wizard]('/guide/installation#initialize-with-the-setup-wizard), a 'config/orchestration.php' file is created. This serves as your global configuration, applying default settings across all services unless overridden by service-specific configurations.
+Upon initializing orchestration using the [setup wizard](./installation#initialize-with-the-setup-wizard), a 'config/orchestration.php' file is created. This serves as your global configuration, applying default settings across all services unless overridden by service-specific configurations.
 
 ### Initial Setup
 Your orchestration config file should initially look like this:
