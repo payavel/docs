@@ -3,11 +3,11 @@
     "vitepress": "^1.0.0-rc.44"
   },
   "scripts": {
-    "docs:dev": "vitepress dev docs/payavel",
-    "docs:build": "vitepress build docs/payavel",
-    "docs:preview": "vitepress preview docs/payavel",
-    "orchestration:dev": "vitepress dev docs/orchestration",
-    "orchestration:build": "vitepress build docs/orchestration",
-    "orchestration:preview": "vitepress preview docs/orchestration"
+    "payavel:dev": "vitepress dev payavel",
+    "payavel:build": "vitepress build payavel",
+    "payavel:preview": "vitepress preview payavel",
+    "orchestration:dev": "vitepress dev orchestration",
+    "orchestration:build": "vitepress build orchestration",
+    "orchestration:preview": "vitepress preview orchestration"
   }
 }
