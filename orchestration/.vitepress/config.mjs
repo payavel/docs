@@ -11,8 +11,9 @@ export default defineConfig({
     logo: {
       light: '/logo-icon_color-text_black-no_background.svg',
       dark: '/logo-icon_color-text_white-no_background.svg',
-      alt: 'Payavel'
+      alt: 'Payavel Orchestration'
     },
+    siteTitle: false,
 
     nav: [
       { text: 'Guide', link: '/guide/what-is-orchestration' }
