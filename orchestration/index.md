@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "orchestration"
-  text: "Designed for efficiency by providing a unified interface to streamline your service integrations"
+  text: "Streamline Integrations with Unified Simplicity"
   actions:
     - theme: brand
       text: Get Started
