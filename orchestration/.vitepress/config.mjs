@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { config } from '../../resources/js/config.mjs'
+import dotenv from 'dotenv';
+dotenv.config();
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -18,6 +20,15 @@ export default defineConfig({
     nav: [
       { text: 'Guide', link: '/guide/what-is-orchestration' }
     ],
+
+    search: {
+      provider: 'algolia',
+      options: {
+          appId: process.env.ALGOLIA_APP_ID,
+          apiKey: process.env.ALGOLIA_API_KEY,
+          indexName: process.env.ALGOLIA_ORCHESTRATION_INDEX
+      }
+    },
 
     sidebar: [
       {
