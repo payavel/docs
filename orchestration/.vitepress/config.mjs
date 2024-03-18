@@ -49,6 +49,10 @@ export default defineConfig({
       }
     ],
 
+    sitemap: {
+      hostname: 'https://orchestration.payavel.com'
+    },
+
     socialLinks: [
       { icon: 'github', link: 'https://github.com/payavel/orchestration' }
     ]
