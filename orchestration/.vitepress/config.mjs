@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { config } from '../../resources/js/config.mjs'
+import { config, ecosystemNav } from '../../resources/js/config.mjs'
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -18,7 +18,8 @@ export default defineConfig({
     siteTitle: false,
 
     nav: [
-      { text: 'Guide', link: '/guide/what-is-orchestration' }
+      { text: 'Guide', link: '/guide/what-is-orchestration' },
+      { text: 'Ecosystem', items: ecosystemNav }
     ],
 
     search: {

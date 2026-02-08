@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { config } from '../../resources/js/config.mjs'
+import { config, ecosystemNav } from '../../resources/js/config.mjs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -17,7 +17,8 @@ export default defineConfig({
 
     nav: [
       { text: 'Guide', link: '/guide/what-is-payavel' },
-      { text: 'API Reference', link: '/api' }
+      { text: 'API Reference', link: '/api' },
+      { text: 'Ecosystem', items: ecosystemNav }
     ],
 
     sidebar: {
