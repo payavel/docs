@@ -4,9 +4,6 @@
     "vitepress": "^1.6.4"
   },
   "scripts": {
-    "payavel:dev": "vitepress dev payavel",
-    "payavel:build": "vitepress build payavel",
-    "payavel:preview": "vitepress preview payavel",
     "orchestration:dev": "vitepress dev orchestration",
     "orchestration:build": "vitepress build orchestration",
     "orchestration:preview": "vitepress preview orchestration",

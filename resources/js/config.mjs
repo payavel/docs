@@ -7,7 +7,6 @@ export const config = {
 };
 
 export const ecosystemNav = [
-    { text: 'Payavel', link: 'https://payavel.com' },
     { text: 'Orchestration', link: 'https://orchestration.payavel.com' },
     { text: 'Checkout', link: 'https://checkout.payavel.com' }
 ];
