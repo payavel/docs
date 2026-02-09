@@ -3,8 +3,8 @@ Getting Orchestration set up in your Laravel project is straightforward. Follow 
 
 ## Prerequisites
 Before you begin, ensure your development environment meets the following requirements:
-- [PHP](https://www.php.net/) version 7.4 or higher along with a compatible version of [Composer](https://getcomposer.org/).
-- [Laravel](https://laravel.com/) version 8 or higher.
+- [PHP](https://www.php.net/) version 8.1 or higher.
+- [Laravel](https://laravel.com/) version 10 or higher.
 
 ## Install via Composer
 Orchestration can be easily added to any new or existing Laravel application using Composer. Run the following command in your project's root directory:
