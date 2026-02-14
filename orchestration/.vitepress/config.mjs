@@ -45,6 +45,8 @@ export default defineConfig({
             { text: 'Installation', link: '/guide/installation' },
             { text: 'Configuration', link: '/guide/configuration' },
             { text: 'File Structure', link: '/guide/file-structure' },
+            { text: 'Drivers', link: '/guide/drivers' },
+            { text: 'Console Commands', link: '/guide/console-commands' },
             { text: 'Basic Usage', link: '/guide/basic-usage' },
             { text: 'Use Cases', link: '/guide/use-cases' }
         ]

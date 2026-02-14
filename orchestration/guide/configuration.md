@@ -65,7 +65,7 @@ return [
 
     'models' => [
         \Payavel\Orchestration\Models\Provider::class => \App\Models\Provider::class,
-        \Payavel\Orchestration\Models\Merchant::class => \App\Models\Merchant::class,
+        \Payavel\Orchestration\Models\Account::class => \App\Models\Account::class,
     ],
 
 ];
@@ -127,13 +127,13 @@ return [
     'defaults' => [
         'driver' => 'config',
         'provider' => 'adyen',
-        'merchant' => 'payavel',
+        'account' => 'payavel',
     ],
 
 ];
 ```
 :::warning :warning: Warning
-It only makes sense to specify a default merchant when it is application specific, where you don't orchestrate multiple accounts for a single service provider.
+It only makes sense to specify a default account when it is application specific, where you don't orchestrate multiple accounts for a single service provider.
 :::
 
 #### Configuring Testing
@@ -146,9 +146,9 @@ return [
 ];
 ```
 
-#### Registering Providers and Merchants
+#### Registering Providers and Accounts
 - Detail each provider's configuration.
-- List merchants using the service and specify their provider configurations.
+- List accounts using the service and specify their provider configurations.
 
 ```php
 return [

@@ -2,7 +2,7 @@
 Getting started with Orchestration in your Laravel application is straightforward. This guide will walk you through the process of setting up a basic service, making your first service request, and handling the response. For this example, we'll use a hypothetical checkout service integration.
 
 ## Step 1: Orchestrate the Service
-The first step is to define a service. If you haven't done so yet, follow the [installation guide](/guide/installation) to set up a 'checkout' service along with a provider and a merchant.
+The first step is to define a service. If you haven't done so yet, follow the [installation guide](/guide/installation) to set up a 'checkout' service along with a provider and an account.
 ```bash
 php artisan orchestrate:service
 ```
@@ -13,7 +13,7 @@ return [
 
     'defaults' => [
         'provider' => 'stripe',
-        'merchant' => 'payavel',
+        'account' => 'payavel',
     ],
 
     'providers' => [
@@ -23,13 +23,12 @@ return [
         ],
     ],
 
-    'merchants' => [
+    'accounts' => [
         'payavel' => [
             'providers' => [
                 'stripe' => [
-                    'api_key' => '...', // [!code --]
-                    'api_key' => env('STRIPE_PAYAVEL_API_KEY'), // [!code ++]
-                    'account_id' => env('STRIPE_PAYAVEL_ACCOUNT_ID'), // [!code ++]
+                    'api_key' => env('STRIPE_PAYAVEL_API_KEY'),
+                    'account_id' => env('STRIPE_PAYAVEL_ACCOUNT_ID'),
                 ],
             ],
         ],
@@ -59,11 +58,11 @@ class StripeCheckoutRequest extends ServiceRequest implements CheckoutRequester
         $this->http = Http::asForm() // [!code ++:9]
             ->baseUrl(Config::get('checkout.providers.stripe.base_url'))
             ->withToken(
-                Config::get("checkout.merchants.{$this->merchant->getId()}.providers.stripe.api_key")
+                Config::get("checkout.accounts.{$this->account->getId()}.providers.stripe.api_key")
             )
             ->withHeader(
                 'Stripe-Account',
-                Config::get("checkout.merchants.{$this->merchant->getId()}.providers.stripe.account_id")
+                Config::get("checkout.accounts.{$this->account->getId()}.providers.stripe.account_id")
             );
     }
 }
@@ -123,11 +122,11 @@ class StripeCheckoutRequest extends ServiceRequest implements CheckoutRequester
         $this->http = Http::asForm()
             ->baseUrl(Config::get('checkout.providers.stripe.base_url'))
             ->withToken(
-                Config::get("checkout.merchants.{$this->merchant->getId()}.providers.stripe.api_key")
+                Config::get("checkout.accounts.{$this->account->getId()}.providers.stripe.api_key")
             )
             ->withHeader(
                 'Stripe-Account',
-                Config::get("checkout.merchants.{$this->merchant->getId()}.providers.stripe.account_id")
+                Config::get("checkout.accounts.{$this->account->getId()}.providers.stripe.account_id")
             );
     }
     // [!code ++:16]
