@@ -18,7 +18,7 @@ export default defineConfig({
 
     nav: [
       { text: 'Documentation', link: '/orchestration/guide/introduction' },
-      { text: 'GitHub', link: 'https://github.com/payavel/orchestration' }
+      { text: 'GitHub', link: 'https://github.com/payavel' }
     ],
 
     search: {
