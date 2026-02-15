@@ -7,11 +7,8 @@ hero:
   tagline: "The modern payment ecosystem for Laravel applications."
   actions:
     - theme: brand
-      text: Orchestration
-      link: /orchestration/guide/what-is-orchestration
-    - theme: brand
-      text: Checkout
-      link: /checkout/guide/what-is-checkout
+      text: Get Started
+      link: /orchestration/guide/introduction
     - theme: alt
       text: View on GitHub
       link: https://github.com/payavel
@@ -19,7 +16,7 @@ hero:
 features:
   - title: Service Orchestration
     details: Manage multiple service providers with a unified API and flexible drivers.
-    link: /orchestration/guide/what-is-orchestration
+    link: /orchestration/guide/introduction
   - title: Unified Checkout
     details: Integrate payments easily with support for Stripe, Braintree, and more.
     link: /checkout/guide/what-is-checkout

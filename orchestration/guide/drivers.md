@@ -1,6 +1,6 @@
 # Drivers
 
-Payavel Orchestration comes with two primary drivers for managing your service configurations: **Config** and **Database**. You can choose the one that best fits your application's architecture.
+Payavel's ecosystem (Orchestration & Checkout) comes with two primary drivers for managing your service configurations: **Config** and **Database**. You can choose the one that best fits your application's architecture.
 
 ## Config Driver
 
@@ -12,7 +12,7 @@ The **Config Driver** is the default driver. It stores all service configuration
 - **Performance**: Accessing config files is generally faster than database queries.
 
 ### Setup
-Ensure your `orchestration.php` defaults to the config driver:
+Ensure your `orchestration.php` (or `checkout.php`) defaults to the config driver:
 
 ```php
 'defaults' => [
@@ -35,7 +35,7 @@ To use the database driver, you first need to generate the necessary migrations.
 1. **Generate Migrations**:
    Run the `orchestrate:service` command with the `--driver=database` option, or update an existing service configuration.
 
-   When creating a new service with the database driver, Orchestration will generate a migration file to create the following tables:
+   When creating a new service with the database driver, Payavel will generate a migration file to create the following tables:
    - `services`
    - `providers`
    - `accounts`

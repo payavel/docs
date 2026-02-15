@@ -17,8 +17,8 @@ export default defineConfig({
     siteTitle: false,
 
     nav: [
-      { text: 'Orchestration', link: '/orchestration/guide/what-is-orchestration' },
-      { text: 'Checkout', link: '/checkout/guide/what-is-checkout' }
+      { text: 'Documentation', link: '/orchestration/guide/introduction' },
+      { text: 'GitHub', link: 'https://github.com/payavel/orchestration' }
     ],
 
     search: {
@@ -26,51 +26,50 @@ export default defineConfig({
       options: {
           appId: process.env.ALGOLIA_APP_ID,
           apiKey: process.env.ALGOLIA_API_KEY,
-          indexName: process.env.ALGOLIA_ORCHESTRATION_INDEX // Use orchestration index for now or create a unified one
+          indexName: process.env.ALGOLIA_ORCHESTRATION_INDEX
       }
     },
 
-    sidebar: {
-       '/orchestration/': [
-          {
-            text: 'Introduction',
-            items: [
-              { text: 'What is orchestration?', link: '/orchestration/guide/what-is-orchestration' },
-              { text: 'Features', link: '/orchestration/guide/features' },
-            ]
-          },
-          {
-            text: 'Getting Started',
-            items: [
-                { text: 'Installation', link: '/orchestration/guide/installation' },
-                { text: 'Configuration', link: '/orchestration/guide/configuration' },
-                { text: 'File Structure', link: '/orchestration/guide/file-structure' },
-                { text: 'Drivers', link: '/orchestration/guide/drivers' },
-                { text: 'Console Commands', link: '/orchestration/guide/console-commands' },
-                { text: 'Basic Usage', link: '/orchestration/guide/basic-usage' },
-                { text: 'Use Cases', link: '/orchestration/guide/use-cases' }
-            ]
-          }
-       ],
-       '/checkout/': [
-          {
-            text: 'Introduction',
-            items: [
-              { text: 'What is checkout?', link: '/checkout/guide/what-is-checkout' },
-            ]
-          },
-          {
-            text: 'Getting Started',
-            items: [
-                { text: 'Installation', link: '/checkout/guide/installation' },
-                { text: 'Configuration', link: '/checkout/guide/configuration' },
-                { text: 'Basic Usage', link: '/checkout/guide/basic-usage' },
-                { text: 'Drivers', link: '/checkout/guide/drivers' },
-                { text: 'Console Commands', link: '/checkout/guide/console-commands' },
-            ]
-          }
-       ]
-    },
+    sidebar: [
+      {
+        text: 'Introduction',
+        items: [
+          { text: 'What is Payavel?', link: '/orchestration/guide/introduction' },
+          { text: 'Architecture & Features', link: '/orchestration/guide/features' },
+        ]
+      },
+      {
+        text: 'Getting Started',
+        items: [
+            { text: 'Installation', link: '/orchestration/guide/installation' },
+            { text: 'Configuration', link: '/orchestration/guide/configuration' },
+            { text: 'File Structure', link: '/orchestration/guide/file-structure' },
+        ]
+      },
+      {
+        text: 'Services & Orchestration',
+        items: [
+            { text: 'Service Concepts', link: '/orchestration/guide/basic-usage' },
+            { text: 'Use Cases', link: '/orchestration/guide/use-cases' },
+        ]
+      },
+       {
+        text: 'Checkout Integration',
+        items: [
+            { text: 'What is Checkout?', link: '/checkout/guide/what-is-checkout' },
+            { text: 'Installation', link: '/checkout/guide/installation' },
+            { text: 'Configuration', link: '/checkout/guide/configuration' },
+            { text: 'Basic Usage', link: '/checkout/guide/basic-usage' },
+        ]
+      },
+      {
+        text: 'Advanced',
+        items: [
+            { text: 'Drivers', link: '/orchestration/guide/drivers' },
+            { text: 'Console Commands', link: '/orchestration/guide/console-commands' },
+        ]
+      }
+    ],
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/payavel/orchestration' }

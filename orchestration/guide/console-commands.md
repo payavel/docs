@@ -1,6 +1,6 @@
 # Console Commands
 
-Orchestration provides several Artisan commands to help you manage your services and configurations.
+Payavel provides several Artisan commands to help you manage your services and configurations across both Orchestration and Checkout packages.
 
 ## `orchestrate:service`
 
