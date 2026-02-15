@@ -1,16 +1,11 @@
-name: Build & Deploy Orchestration Docs
+name: Build & Deploy Docs
 
 on:
   push:
     branches:
       - master
     paths:
-      - 'orchestration/**/*'
-  pull_request:
-    branches:
-      - master
-    paths:
-      - 'orchestration/**/*'
+      - '**'
 
 jobs:
   deploy:
@@ -24,19 +19,19 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install VitePress
-        run: npm install --dev
+      - name: Install Dependencies
+        run: npm ci
 
-      - name: Build Orchestration Docs
-        run: npm run orchestration:build
+      - name: Build Docs
+        run: npm run docs:build
         env:
           ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
           ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
-          ALGOLIA_ORCHESTRATION_INDEX: ${{ secrets.ALGOLIA_ORCHESTRATION_INDEX }}
+          # ALGOLIA_INDEX_NAME: ${{ secrets.ALGOLIA_INDEX_NAME }}
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy orchestration/.vitepress/dist --project-name=orchestration
+          command: pages deploy .vitepress/dist --project-name=payavel

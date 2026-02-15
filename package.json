@@ -4,11 +4,8 @@
     "vitepress": "^1.6.4"
   },
   "scripts": {
-    "orchestration:dev": "vitepress dev orchestration",
-    "orchestration:build": "vitepress build orchestration",
-    "orchestration:preview": "vitepress preview orchestration",
-    "checkout:dev": "vitepress dev checkout",
-    "checkout:build": "vitepress build checkout",
-    "checkout:preview": "vitepress preview checkout"
+    "docs:dev": "vitepress dev .",
+    "docs:build": "vitepress build .",
+    "docs:preview": "vitepress preview ."
   }
 }
