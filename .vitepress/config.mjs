@@ -17,7 +17,7 @@ export default defineConfig({
     siteTitle: false,
 
     nav: [
-      { text: 'Documentation', link: '/orchestration/guide/introduction' },
+      { text: 'Documentation', link: '/guide/what-is-payavel' },
       { text: 'GitHub', link: 'https://github.com/payavel' }
     ],
 
@@ -32,29 +32,20 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Introduction',
+        text: 'Ecosystem',
         items: [
-          { text: 'What is Payavel?', link: '/orchestration/guide/introduction' },
+          { text: 'What is Payavel?', link: '/guide/what-is-payavel' },
           { text: 'Architecture & Features', link: '/orchestration/guide/features' },
         ]
       },
       {
-        text: 'Getting Started',
+        text: 'Catalog',
         items: [
-            { text: 'Installation', link: '/orchestration/guide/installation' },
-            { text: 'Configuration', link: '/orchestration/guide/configuration' },
-            { text: 'File Structure', link: '/orchestration/guide/file-structure' },
+            { text: 'What is Catalog?', link: '/catalog/guide/what-is-catalog' },
         ]
       },
       {
-        text: 'Services & Orchestration',
-        items: [
-            { text: 'Service Concepts', link: '/orchestration/guide/basic-usage' },
-            { text: 'Use Cases', link: '/orchestration/guide/use-cases' },
-        ]
-      },
-       {
-        text: 'Checkout Integration',
+        text: 'Checkout',
         items: [
             { text: 'What is Checkout?', link: '/checkout/guide/what-is-checkout' },
             { text: 'Installation', link: '/checkout/guide/installation' },
@@ -63,8 +54,31 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Advanced',
+        text: 'Fraud',
         items: [
+            { text: 'What is Fraud?', link: '/fraud/guide/what-is-fraud' },
+        ]
+      },
+      {
+        text: 'Subscriptions',
+        items: [
+            { text: 'What are Subscriptions?', link: '/subscriptions/guide/what-are-subscriptions' },
+        ]
+      },
+      {
+        text: 'Reporting',
+        items: [
+            { text: 'What is Reporting?', link: '/reporting/guide/what-is-reporting' },
+        ]
+      },
+      {
+        text: 'Core Orchestration',
+        items: [
+            { text: 'Installation', link: '/orchestration/guide/installation' },
+            { text: 'Configuration', link: '/orchestration/guide/configuration' },
+            { text: 'File Structure', link: '/orchestration/guide/file-structure' },
+            { text: 'Service Concepts', link: '/orchestration/guide/basic-usage' },
+            { text: 'Use Cases', link: '/orchestration/guide/use-cases' },
             { text: 'Drivers', link: '/orchestration/guide/drivers' },
             { text: 'Console Commands', link: '/orchestration/guide/console-commands' },
         ]
