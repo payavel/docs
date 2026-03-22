@@ -10,7 +10,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /guide/what-is-payavel
+      link: /guide/ecosystem/what-is-payavel
     - theme: alt
       text: View on GitHub
       link: https://github.com/payavel
@@ -18,16 +18,16 @@ hero:
 features:
   - title: "Structure"
     details: Centralize and define your pricing strategies across your entire infrastructure with Payavel Catalog.
-    link: /catalog/guide/what-is-catalog
+    link: /guide/catalog/what-is-catalog
   - title: "Capture"
     details: Seamlessly integrate, process, and orchestrate payments across multiple providers using Payavel Checkout.
-    link: /checkout/guide/what-is-checkout
+    link: /guide/checkout/what-is-checkout
   - title: "Assure"
     details: Protect your business with the built-in risk evaluation and chargeback mitigation tools in Payavel Fraud.
-    link: /fraud/guide/what-is-fraud
+    link: /guide/risk/what-is-fraud
   - title: "Retain"
     details: Handle recurring billing, lifecycle renewals, dunning, and prorations effortlessly via Payavel Subscriptions.
-    link: /subscriptions/guide/what-are-subscriptions
+    link: /guide/subscription/what-are-subscriptions
   - title: "Recognize"
     details: Consolidate data from disparate gateways to simplify your financial operations using Payavel Reporting.
-    link: /reporting/guide/what-is-reporting
+    link: /guide/recognition/what-is-reporting

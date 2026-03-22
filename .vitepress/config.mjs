@@ -1,11 +1,14 @@
 
 import { defineConfig } from 'vitepress'
-import { config } from '../resources/js/config.mjs'
 import dotenv from 'dotenv';
 dotenv.config();
 
 export default defineConfig({
-  ...config,
+  lang: 'en-US',
+  cleanUrls: true,
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/icon-color-no_background.svg' }]
+  ],
   title: "Payavel",
   description: "Service Orchestration & Payment Integration for Laravel",
   themeConfig: {
@@ -17,7 +20,7 @@ export default defineConfig({
     siteTitle: false,
 
     nav: [
-      { text: 'Documentation', link: '/guide/what-is-payavel' },
+      { text: 'Documentation', link: '/guide/ecosystem/what-is-payavel' },
       { text: 'GitHub', link: 'https://github.com/payavel' }
     ],
 
@@ -34,53 +37,53 @@ export default defineConfig({
       {
         text: 'Ecosystem',
         items: [
-          { text: 'What is Payavel?', link: '/guide/what-is-payavel' },
-          { text: 'Architecture & Features', link: '/orchestration/guide/features' },
+          { text: 'What is Payavel?', link: '/guide/ecosystem/what-is-payavel' },
+          { text: 'Architecture & Features', link: '/guide/ecosystem/features' },
         ]
       },
       {
         text: 'Catalog',
         items: [
-            { text: 'What is Catalog?', link: '/catalog/guide/what-is-catalog' },
+            { text: 'What is Catalog?', link: '/guide/catalog/what-is-catalog' },
         ]
       },
       {
         text: 'Checkout',
         items: [
-            { text: 'What is Checkout?', link: '/checkout/guide/what-is-checkout' },
-            { text: 'Installation', link: '/checkout/guide/installation' },
-            { text: 'Configuration', link: '/checkout/guide/configuration' },
-            { text: 'Basic Usage', link: '/checkout/guide/basic-usage' },
+            { text: 'What is Checkout?', link: '/guide/checkout/what-is-checkout' },
+            { text: 'Installation', link: '/guide/checkout/installation' },
+            { text: 'Configuration', link: '/guide/checkout/configuration' },
+            { text: 'Basic Usage', link: '/guide/checkout/basic-usage' },
         ]
       },
       {
-        text: 'Fraud',
+        text: 'Risk',
         items: [
-            { text: 'What is Fraud?', link: '/fraud/guide/what-is-fraud' },
+            { text: 'What is Risk?', link: '/guide/risk/what-is-fraud' },
         ]
       },
       {
-        text: 'Subscriptions',
+        text: 'Subscription',
         items: [
-            { text: 'What are Subscriptions?', link: '/subscriptions/guide/what-are-subscriptions' },
+            { text: 'What are Subscriptions?', link: '/guide/subscription/what-are-subscriptions' },
         ]
       },
       {
-        text: 'Reporting',
+        text: 'Recognition',
         items: [
-            { text: 'What is Reporting?', link: '/reporting/guide/what-is-reporting' },
+            { text: 'What is Recognition?', link: '/guide/recognition/what-is-reporting' },
         ]
       },
       {
-        text: 'Core Orchestration',
+        text: 'Orchestration',
         items: [
-            { text: 'Installation', link: '/orchestration/guide/installation' },
-            { text: 'Configuration', link: '/orchestration/guide/configuration' },
-            { text: 'File Structure', link: '/orchestration/guide/file-structure' },
-            { text: 'Service Concepts', link: '/orchestration/guide/basic-usage' },
-            { text: 'Use Cases', link: '/orchestration/guide/use-cases' },
-            { text: 'Drivers', link: '/orchestration/guide/drivers' },
-            { text: 'Console Commands', link: '/orchestration/guide/console-commands' },
+            { text: 'Installation', link: '/guide/orchestration/installation' },
+            { text: 'Configuration', link: '/guide/orchestration/configuration' },
+            { text: 'File Structure', link: '/guide/orchestration/file-structure' },
+            { text: 'Service Concepts', link: '/guide/orchestration/basic-usage' },
+            { text: 'Use Cases', link: '/guide/orchestration/use-cases' },
+            { text: 'Drivers', link: '/guide/orchestration/drivers' },
+            { text: 'Console Commands', link: '/guide/orchestration/console-commands' },
         ]
       }
     ],
