@@ -38,7 +38,7 @@ export default defineConfig({
         text: 'Ecosystem',
         items: [
           { text: 'What is Payavel?', link: '/guide/ecosystem/what-is-payavel' },
-          { text: 'Architecture & Features', link: '/guide/ecosystem/features' },
+          { text: 'How it Works', link: '/guide/ecosystem/how-it-works' },
         ]
       },
       {

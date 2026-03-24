@@ -24,4 +24,4 @@ To eliminate this friction, Payavel leverages a powerful **Orchestration Layer**
 
 ## Dive Deeper
 
-Ready to see how Orchestration accomplishes this under the hood? Check out the [Architecture & Features](./features.md) page to learn about our unified service API, auto-generated scaffolding, and powerful multi-driver support.
+Ready to see how Orchestration accomplishes this under the hood? Check out the [How it Works](./how-it-works.md) page to learn about our unified service API, auto-generated scaffolding, and powerful multi-driver support.
