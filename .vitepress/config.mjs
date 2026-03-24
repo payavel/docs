@@ -44,7 +44,7 @@ export default defineConfig({
       {
         text: 'Catalog',
         items: [
-            { text: 'What is Catalog?', link: '/guide/catalog/what-is-catalog' },
+            { text: 'Introduction', link: '/guide/catalog/introduction' },
         ]
       },
       {
