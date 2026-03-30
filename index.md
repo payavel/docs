@@ -21,7 +21,7 @@ features:
     link: /guide/orchestration/basic-usage
   - title: "Catalog"
     details: Centralize and define your products and pricing strategies.
-    link: /guide/catalog/introduction
+    link: /guide/catalog/products-and-pricing
   - title: "Checkout"
     details: Seamlessly integrate, process, and manage payments across one or more providers.
     link: /guide/checkout/accepting-payments

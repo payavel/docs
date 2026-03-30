@@ -44,7 +44,7 @@ export default defineConfig({
       {
         text: 'Catalog',
         items: [
-            { text: 'Introduction', link: '/guide/catalog/introduction' },
+            { text: 'Products & Pricing', link: '/guide/catalog/products-and-pricing' },
         ]
       },
       {

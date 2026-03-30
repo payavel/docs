@@ -1,4 +1,4 @@
-# Introduction
+# Products & Pricing
 
 > [!WARNING] Coming Soon
 > Catalog is an upcoming package in the Payavel ecosystem. It is currently under active development and has not yet been released.
