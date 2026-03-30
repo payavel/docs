@@ -24,7 +24,7 @@ features:
     link: /guide/catalog/introduction
   - title: "Checkout"
     details: Seamlessly integrate, process, and manage payments across one or more providers.
-    link: /guide/checkout/what-is-checkout
+    link: /guide/checkout/accepting-payments
   - title: "Risk"
     details: Protect your business with built-in risk evaluation and chargeback mitigation.
     link: /guide/risk/what-is-fraud
