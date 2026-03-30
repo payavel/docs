@@ -51,8 +51,7 @@ export default defineConfig({
         text: 'Checkout',
         items: [
             { text: 'Accepting Payments', link: '/guide/checkout/accepting-payments' },
-            { text: 'Installation', link: '/guide/checkout/installation' },
-            { text: 'Configuration', link: '/guide/checkout/configuration' },
+            { text: 'Getting Started', link: '/guide/checkout/getting-started' },
             { text: 'Basic Usage', link: '/guide/checkout/basic-usage' },
         ]
       },

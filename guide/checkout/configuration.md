@@ -1,3 +1,0 @@
-# Configuration
-
-[Documentation coming soon...]

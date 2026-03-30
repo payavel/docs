@@ -1,3 +1,0 @@
-# Installation
-
-[Documentation coming soon...]
