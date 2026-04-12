@@ -59,7 +59,7 @@ export default defineConfig({
       {
         text: 'Risk',
         items: [
-            { text: 'What is Risk?', link: '/guide/risk/what-is-fraud' },
+            { text: 'Risk Management', link: '/guide/risk/risk-management' },
         ]
       },
       {
