@@ -71,7 +71,7 @@ export default defineConfig({
       {
         text: 'Recognition',
         items: [
-          { text: 'What is Recognition?', link: '/guide/recognition/what-is-reporting' },
+          { text: 'Revenue Recognition', link: '/guide/recognition/revenue-recognition' },
         ]
       },
       {
