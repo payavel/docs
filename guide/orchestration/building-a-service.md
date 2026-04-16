@@ -2,7 +2,7 @@
 Getting started with Orchestration in your Laravel application is straightforward. This guide will walk you through the process of setting up a basic service, making your first service request, and handling the response. For this example, we'll use a hypothetical checkout service integration.
 
 ## Step 1: Orchestrate the Service
-The first step is to define a service. If you haven't done so yet, follow the [installation guide](/guide/orchestration/installation) to set up a 'checkout' service along with a provider and an account.
+The first step is to define a service. If you haven't done so yet, follow the [installation guide](/guide/orchestration/getting-started) to set up a 'checkout' service along with a provider and an account.
 ```bash
 php artisan orchestrate:service
 ```
