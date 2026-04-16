@@ -18,7 +18,7 @@ hero:
 features:
   - title: "Orchestration"
     details: Seamlessly route operations across multiple provider-account configurations.
-    link: /guide/orchestration/basic-usage
+    link: /guide/orchestration/getting-started
   - title: "Catalog"
     details: Centralize and define your products and pricing strategies.
     link: /guide/catalog/products-and-pricing

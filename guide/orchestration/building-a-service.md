@@ -7,7 +7,7 @@ The first step is to define a service. If you haven't done so yet, follow the [i
 php artisan orchestrate:service
 ```
 
-Then, configure your service accordingly by following our [configuration guide](/guide/orchestration/configuration).
+Then, configure your service accordingly by following our [configuration guide](/guide/orchestration/configuration-guide).
 ```php
 return [
 

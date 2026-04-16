@@ -77,8 +77,8 @@ export default defineConfig({
       {
         text: 'Orchestration',
         items: [
-          { text: 'Installation', link: '/guide/orchestration/installation' },
-          { text: 'Configuration', link: '/guide/orchestration/configuration' },
+          { text: 'Getting Started', link: '/guide/orchestration/getting-started' },
+          { text: 'Configuration Guide', link: '/guide/orchestration/configuration-guide' },
           { text: 'File Structure', link: '/guide/orchestration/file-structure' },
           { text: 'Building a Service', link: '/guide/orchestration/building-a-service' },
           { text: 'Use Cases', link: '/guide/orchestration/use-cases' },
