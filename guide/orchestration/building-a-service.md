@@ -1,4 +1,4 @@
-# Basic Usage
+# Building a Service
 Getting started with Orchestration in your Laravel application is straightforward. This guide will walk you through the process of setting up a basic service, making your first service request, and handling the response. For this example, we'll use a hypothetical checkout service integration.
 
 ## Step 1: Orchestrate the Service
@@ -74,7 +74,7 @@ This setup process not only encapsulates the configuration necessary for the spe
 Before implementing the logic of your service, start by defining the contracts for both requests and responses. These contracts serve as blueprints for how your service interacts with various providers.
 
 ### Request Contract
-Update the "app/Services/Checkout/Contracts/CheckoutRequester" interface with actions the service should perform.
+Update the `app/Services/Checkout/Contracts/CheckoutRequester.php` interface with actions the service should perform.
 
 ```php
 namespace App\Services\Checkout\Contracts;
@@ -87,7 +87,7 @@ interface CheckoutRequester
 ```
 
 ### Response Contract
-Similarly, update the "app/Services/Checkout/Contracts/CheckoutResponder" interface. This ensures that your service returns a consistent response structure, regardless of the underlying provider.
+Similarly, update the `app/Services/Checkout/Contracts/CheckoutResponder.php` interface. This ensures that your service returns a consistent response structure, regardless of the underlying provider.
 
 ```php
 namespace App\Services\Checkout\Contracts;
@@ -273,4 +273,4 @@ Route::post('carts/{cart}/checkout', CheckoutController::class)->name('carts.che
 ## Next Steps
 By following this guide, you've learned how to orchestrate a service, define and implement service contracts, and effectively use the orchestrated service in a real-world scenario.
 
-Ready to dive deeper? Consider exploring more sophisticated features of orchestration, including  advanced service mocking strategies, and dynamic service configuration based on runtime conditions.
+Ready to dive deeper? Consider exploring more sophisticated features of orchestration, including advanced service mocking strategies, and dynamic service configuration based on runtime conditions.

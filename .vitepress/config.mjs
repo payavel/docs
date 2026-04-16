@@ -80,7 +80,7 @@ export default defineConfig({
           { text: 'Installation', link: '/guide/orchestration/installation' },
           { text: 'Configuration', link: '/guide/orchestration/configuration' },
           { text: 'File Structure', link: '/guide/orchestration/file-structure' },
-          { text: 'Service Concepts', link: '/guide/orchestration/basic-usage' },
+          { text: 'Building a Service', link: '/guide/orchestration/building-a-service' },
           { text: 'Use Cases', link: '/guide/orchestration/use-cases' },
           { text: 'Drivers', link: '/guide/orchestration/drivers' },
           { text: 'Console Commands', link: '/guide/orchestration/console-commands' },
