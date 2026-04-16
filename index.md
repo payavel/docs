@@ -27,10 +27,10 @@ features:
     link: /guide/checkout/accepting-payments
   - title: "Risk"
     details: Protect your business with built-in risk evaluation and chargeback mitigation.
-    link: /guide/risk/what-is-fraud
+    link: /guide/risk/risk-management
   - title: "Subscription"
     details: Handle recurring billing, lifecycle renewals, dunning, and prorations effortlessly.
-    link: /guide/subscription/what-are-subscriptions
+    link: /guide/subscription/recurring-billing
   - title: "Recognition"
     details: Consolidate data to simplify your financial reporting and operations.
-    link: /guide/recognition/what-is-reporting
+    link: /guide/recognition/revenue-recognition
